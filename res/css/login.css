@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+*:focus { outline: none; }
+
+body{
+    min-width: 800px;
+    border:dashed 1px red;
+    width:100%;
+}
+div{
+    display: block;
+    border-radius: 3px;
+}
+
+.wrapper{
+    padding-top: 40px;
+    width:300px;
+    margin:0 auto;
+    text-align: center;
+}
+.dialog{
+    position:absolute;
+    margin-top:10%;
+    margin-left: 38%;
+    margin-right:auto;
+    width:310px;
+    height:200px;
+    z-index: 1;
+    border-radius: 5px;
+    border:solid 1px #aaa;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+    display:none;
+}
+.dialog_title{
+    position:absolute;
+    width:100%;
+    height:30px;
+    background-color: blue;
+    color:white;
+    text-align: left;
+}
+.dialog_title_btn{
+    width: 30px;
+    height:30px;
+    float:right;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-left:2px;
+    text-align: center;
+    background-color: red;
+}
+.dialog_title_btn:hover{
+    background-color: darkred;
+}
+.dialog_body{
+    position:absolute;
+    width:100%;
+    height:110px;
+    top:40px;
+    padding:20px;
+    background-color: black;
+    color:white;
+    border:solid 1px #aaa;
+}
+.dialog_footer{
+    position:absolute;
+    width:100%;
+    height:40px;
+    bottom:0px;
+    text-align: center;
+    border:solid 1px green;
+}
+.dialog_footer_btn{
+    width:50px;
+    height:35px;
+    color:white;
+    margin:0 10px;
+    background-color: #1E9FFF;
+    border-radius: 3px;
+    border: hidden;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.dialog_footer_btn:hover{
+    opacity: 1;
+}
+.title h3{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.logo{
+    border-radius: 100% 100%;
+    background-color: black;
+}
+.login{
+    border:solid 1px #aaa;
+    margin-top: 10px;
+    padding:10px;
+}
+label{
+    padding:5px;  display: block;
+}
+.login-error{
+    color:red;
+    font-size:12px;
+    text-align: left;
+    padding: 5px;
+    padding-left:15px;
+    border-radius: 3px;
+    border:solid 1px #aaa;
+    background-color: rgba(255,0,0,0.2);
+    display: none;
+}
+.register-error{
+    height:15px;
+    line-height: 15px;
+    padding-left: 10px;
+    border:solid 1px transparent;
+    background-color: rgba(255,0,0,0);
+}
+.form-btn{
+    width:200px;
+    height:35px;
+    color:white;
+    margin-top:20px;
+    background-color: #6cc644;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-image: linear-gradient(#91dd70, #55ae2e);
+    border: 1px solid #5aad35;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-btn:hover{
+}
+
+.form-input{
+    width:280px;
+    height:35px;
+    margin-top:15px;
+    padding-left:10px;
+    line-height: 30px;
+    vertical-align: middle;
+    border:solid 1px #aaa;
+    border-radius: 3px;
+
+}
+.form-input:focus{
+    border:solid 1px #6cc;
+    box-shadow:0 0 10px #6cc;
+}
+a{
+    color:#4078c0;
+    text-decoration: none;
+
+}

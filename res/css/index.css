@@ -1,0 +1,278 @@
+*{  margin:0; padding: 0;}
+body, html {
+    font: 14px/1.5 "PingFang SC",Helvetica,"Helvetica Neue","微软雅黑",Tahoma,Arial,sans-serif;
+}
+a:link, a:visited, body, html {
+    color: #14191e;
+}
+.main_page{
+    border:dashed 1px red
+}
+#header{
+    position:relative;
+    height:70px;
+    background-color: #000;
+    border:dashed 1px red
+}
+#header ul{
+    list-style: none;
+    border:dashed 1px blue
+}
+#header li{
+    width:50px;
+    height:70px;
+    margin:0 0 0 -3px;
+    display: inline-block;
+    border:dashed 1px green;
+}
+#header li a {
+    color:white;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: none;
+    border: dashed 1px red;
+}
+
+#header li a:hover{
+    background-color: red;
+}
+.logo{
+    position:absolute;
+    height:70px;
+    left:30px;
+    border:dashed 1px red
+}
+.logo input[type="image"]{
+    width:50px;
+    height:50px;
+    margin:10px 30px;
+}
+#header .nav{
+    position:absolute;
+    height:70px;
+    left:140px;
+    border:dashed 1px red
+}
+#header .nav ul li{
+    width:150px;
+}
+
+#header .search{
+    position: absolute;
+    left:850px;
+    height:70px;
+    border:dashed 1px red;
+}
+#header .search input{
+    margin:20px 5px;
+    border-radius: 5px;
+    height:30px;
+
+}
+#header .login{
+    position: absolute;
+    left:1150px;
+    height:70px;
+}
+#header .login .unlogin{
+    position: absolute;
+    width:120px;
+
+}
+#header .login .logined{
+    position: absolute;
+    color:white;
+    display: none;
+    height:70px;
+    width:120px;
+    line-height: 79px;
+    text-align: center;
+    border:dashed 1px red
+}
+
+#header .login ul li{
+    width:50px;
+}
+
+#ft_pg{
+    position: relative;
+    height: 460px;
+    overflow: hidden;
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow:5px 0 5px #aaa;
+    border:dashed 1px green
+}
+#menuContent{
+    position: absolute;
+    width:224px;
+    z-index:2;
+    padding-top:6px;
+    border:dashed 1px red
+}
+#menuContent .item{
+    height: 64px;
+    line-height: 66px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 0px;
+    position: relative;
+    background-color: rgba(0,0,0,.2);
+
+}
+#menuContent .item>a {
+    text-decoration: none;
+    display: block;
+    padding: 0 32px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    height: 63px;
+    color: rgba(255,255,255,1);
+}
+#menuContent .item :hover{
+    background-color: rgba(0,0,0,.5);
+}
+#menuContent .item i {
+    position: absolute;
+    right: 32px;
+    color: rgba(255,255,255,.5);
+    font-size: 16px;
+}
+#bannerContent{
+    position: absolute;
+    left:0;  right:0;  top:0;  bottom:0;
+    display: block;
+    width: 1200px;
+    margin: auto;
+    border:dashed 1px green
+}
+
+#bannerContent .banner_img1{
+    position: absolute;
+    z-index: inherit;
+    display: none;
+    width: 1200px;
+    margin:auto;
+    left:0;  right:0;  top:0;  bottom:0;
+    background-image: url("/res/img/1.jpg");
+}
+
+#bannerContent .active{
+    display: block !important;
+}
+
+#bannerContent .banner_img2{
+    position: absolute;
+    z-index: inherit;
+    display: none;
+    width: 1200px;
+    margin:auto;
+    left:0;  right:0;  top:0;  bottom:0;
+    background-image: url("/res/img/2.jpg");
+}
+
+#bannerContent .banner_img3{
+    position: absolute;
+    z-index: inherit;
+    width: 1200px;
+    display: none;
+    margin:auto;
+    left:0;  right:0;  top:0;  bottom:0;
+    background-image: url("/res/img/3.jpg");
+}
+#pre_pg span{
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height:80px;
+    line-height: 80px;
+    font-size: 45px;
+    color:white;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+    background-color: rgba(0,0,0,.1);
+    left:250px;  top:0; bottom: 0;
+}
+
+#pre_pg span:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+#next_pg span{
+    position: absolute;
+    z-index: inherit;
+    text-align: center;
+    width: 60px;
+    height:80px;
+    line-height: 80px;
+    font-size: 45px;
+    color:white;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+    background-color: rgba(0,0,0,.1);
+    right:30px;  top:0; bottom: 0;
+}
+#next_pg span:hover{
+    background-color: rgba(0,0,0,.5);
+}
+#banner_dots{
+    position: absolute;
+    right:20%; bottom: 20px;
+}
+#banner_dots span{
+    width: 10px;
+    height:10px;
+    cursor: pointer;
+    display: inline-block;
+    margin:5px;
+    border-radius: 50%;
+    border:solid 2px #eeeeee;
+    background-color: rgba(0,0,0,.5);
+}
+#banner_dots span:hover{
+    border:solid 2px #aaa;
+    background-color: white;
+}
+#banner_dots span.active{
+    border:solid 2px #aaa;
+    background-color: white;
+}
+.footer{
+    width:100%;
+    height:50px;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+div {
+    background-size: cover;
+}
+/*消失*/
+@keyframes myfirst
+{
+    from{opacity: 0.2}
+    to{opacity:1;}
+}
+
+@-webkit-keyframes myfirst /* Safari 与 Chrome */
+{
+    from{opacity: 0}
+    to{opacity:1;}
+}
+/*出现*/
+@keyframes mysecond
+{
+    from{opacity: 1}
+    to{opacity:0;}
+}
+
+@-webkit-keyframes mysecond /* Safari 与 Chrome */
+{
+    from{opacity: 1}
+    to{opacity:0;}
+}
